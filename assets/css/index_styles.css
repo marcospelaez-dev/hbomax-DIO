@@ -13,5 +13,53 @@ header {
 }
 
 .icones-header {
-    background-color: red;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.title-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.title-headaer-light {
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+hr {
+    width: 40%;
+    background: var(--divider-bg-color);
+    border: none;
+    height: 4px;
+    margin-bottom: 30px;
+}
+.price-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.price-header p:nth-child(1) {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.price-header p:nth-child(2) {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.month {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
 }
