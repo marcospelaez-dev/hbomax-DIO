@@ -45,7 +45,7 @@ hr {
     margin-bottom: 30px;
 }
 .price-header {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .price-header p:nth-child(1) {
@@ -57,9 +57,63 @@ hr {
     font-size: 40px;
     font-weight: bold;
     padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .month {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 100;
+}
+.price-button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    outline: 2px solid transparent;
+    border: none;
+    border-radius: 40px;
+    background: var(--btn-bg-color-gradient);
+    background-size: 200%;
+    color: var(--text-color);
+    transition: background 1s, outline 1s, transform 1s;
+    animation: shake 2.2s linear infinite;
+}
+    
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
+.price-button:hover {
+    background: transparent;
+    outline: 2px solid red;
+}
+
+.description-subscribe-header {
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
 }
