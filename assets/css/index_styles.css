@@ -10,6 +10,8 @@ header {
     padding-top: 200px;
     padding-bottom: 100px;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    animation: bgHeader 10s ease infinite alternate;
+    transition: background-size 15s background-color 10s;
 }
 
 .icones-header {
@@ -83,6 +85,21 @@ hr {
     animation: shake 2.2s linear infinite;
 }
     
+
+.price-button:hover {
+    background: transparent;
+    outline: 2px solid red;
+}
+
+.description-subscribe-header {
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* animation button */
 @keyframes shake {
     0% {
         transform: rotate(0);
@@ -106,15 +123,23 @@ hr {
         transform: rotate(0);
     }
 }
-.price-button:hover {
-    background: transparent;
-    outline: 2px solid red;
-}
 
-.description-subscribe-header {
-    width: 300px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-align: center;
+/* animation background header */
+@keyframes bgHeader {
+    0%, 100% {
+        background-color: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+        background-size: 100%;
+    }
+    25% {
+        background-color: linear-gradient(90deg, #56125b, #0f0f10, #271e6e);
+        background-size: 250%;
+    }
+    50% {
+        background-color: linear-gradient(45deg, #56125b, #0f0f10, #271e6e);
+        background-size: 300%;
+    }
+    75% {
+        background-color: linear-gradient(-90deg, #56125b, #0f0f10, #271e6e);
+        background-size: 250%;
+    }
 }
