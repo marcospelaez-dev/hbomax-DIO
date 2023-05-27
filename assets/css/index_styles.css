@@ -122,6 +122,23 @@ hr {
     header { animation: none; }
 }
 
+/* main config */
+main {
+    margin-top: 200px;
+    background-image: url(../img/background-movies-series.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-main {
+    width: 60%;
+    margin: auto;
+    font-family: 'Raleway',sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 /* animation button */
 @keyframes shake {
