@@ -15,7 +15,7 @@ header {
 }
 
 .icones-header {
-    width: 25%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header {
 }
 
 .header-title {
-    width: 30%;
+    width: 40%;
     margin-bottom: 30px;
 }
 
@@ -98,6 +98,28 @@ hr {
     letter-spacing: 2px;
     text-align: center;
 }
+
+/* breackpoint 780px */
+@media screen and (max-width: 780px) {
+    .icones-header {
+        width: 60%;
+    }
+    .header-title {
+        width: 80%;
+    }
+}
+
+/* breackpoint 480px */
+.icones-header {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icones-header img {
+    margin-bottom: 20px;
+}
+header { animation: none; }
+
 
 /* animation button */
 @keyframes shake {
