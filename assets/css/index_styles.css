@@ -110,15 +110,17 @@ hr {
 }
 
 /* breackpoint 480px */
-.icones-header {
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (max-width: 480px) {
+    .icones-header {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icones-header img {
+        margin-bottom: 20px;
+    }
+    header { animation: none; }
 }
-.icones-header img {
-    margin-bottom: 20px;
-}
-header { animation: none; }
 
 
 /* animation button */
