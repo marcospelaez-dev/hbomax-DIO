@@ -124,6 +124,7 @@ hr {
 
 /* main config */
 main {
+    max-width: 1440px;
     margin-top: 200px;
     background-image: url(../img/background-movies-series.png);
     background-size: cover;
@@ -178,6 +179,7 @@ main {
 .plain-title-price {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -237,7 +239,113 @@ main {
     transform: rotateY(40deg);
 }
 
-/* channels moovies */
+/* config main breackpoint 780px */
+@media screen and (max-width: 780px) {
+    .plan-container {
+    width: 90%;
+    flex-direction: column;
+    }
+}
+
+/* config main breackpoint 480px */
+@media screen and (max-width: 480px) {
+    .plain-board {
+        margin: 30px 0 45px 0;
+    }
+    .plain-title-price {
+        flex-direction: column;
+    }
+    .price-number {
+        font-size: 25px;
+    }
+    .board-left {
+        padding-top: 40px;
+    }
+    .botton-left {
+        top: 0;
+    }
+}
+
+/* channels cards */
+.channels {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    padding: 0;
+    height: 60dvh;
+    border-radius: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.card:hover {
+    width: 32%;
+}
+
+.card-1 {
+    background-image: url(../img/hbo-default_0.webp);
+    transition: 1.5s;
+}
+.card-1:hover {
+    background-image: url(../img/hbo-hover_0.webp);
+}
+
+.card-2 {
+    background-image: url(../img/MAX-Default.webp);
+     transition: 1.5s;
+}
+.card-2:hover {
+    background-image: url(../img/MAX-Hover.webp);
+}
+
+.card-3 {
+    background-image: url(../img/DC_Default.webp);
+     transition: 1.5s;
+}
+.card-3:hover {
+    background-image: url(../img/DC-Hover.webp);
+}
+
+.card-4 {
+    background-image: url(../img/WB-Default.webp);
+     transition: 1.5s;
+}
+.card-4:hover {
+    background-image: url(../img/WB-Hover.webp);
+}
+
+.card-5 {
+    background-image: url(../img/CN-Default.webp);
+     transition: 1.5s;
+}
+.card-5:hover {
+    background-image: url(../img/CN-Hover.png);
+}
+
+.card-6 {
+    background-image: url(../img/UCL-Default.webp);
+     transition: 1.5s;
+}
+.card-6:hover {
+    background-image: url(../img/UCL-Hover.webp);
+}
+   
+/* channels cards breackpoint 780px */
+@media screen and (max-width: 780px) {
+    main { margin-bottom: 100px; }
+    .channels { width: 100%; }
+    .card { width: 45%; }
+    .card:hover { width: 47%; }
+}
 
 
 /* animation button header ("ASSINE AGORA") */
