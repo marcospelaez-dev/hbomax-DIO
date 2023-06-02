@@ -65,7 +65,11 @@
   }
 
   /* body geral config */
-  body { background-color: var(--primary-color); color: var(--text-color); }
+  body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
 
   /* nav bar top */
 nav {
@@ -76,6 +80,7 @@ nav {
   padding: 15px 20px;
   background: var(--nav-bg-color);
   position: fixed;
+  z-index: 10;
 }
 nav img {
   width: 10rem;
@@ -113,10 +118,18 @@ nav img {
       padding-bottom: 30px;
   }
 }
+/* main */
+main {
+  margin-top: 200px;
+  background-image: url(../img/background-movies-series.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* footer */
 footer{
   text-align: center;
+  margin-bottom: 20px;
 }
 .help-link {
   margin: 20px 0;

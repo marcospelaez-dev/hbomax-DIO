@@ -123,13 +123,6 @@ hr {
 }
 
 /* main config */
-main {
-    max-width: 1440px;
-    margin-top: 200px;
-    background-image: url(../img/background-movies-series.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .title-main {
     width: 70%;
@@ -267,6 +260,15 @@ main {
 }
 
 /* channels cards */
+.channels-container {
+    text-align: center;
+}
+.title-channels {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 .channels {
     width: 80%;
     margin: auto;
@@ -286,6 +288,11 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     transition: 1s;
+}
+@media screen and (min-width: 1630px) {
+    .card {
+        background-size: 80%;
+    }
 }
 .card:hover {
     width: 32%;
@@ -345,6 +352,32 @@ main {
     .channels { width: 100%; }
     .card { width: 45%; }
     .card:hover { width: 47%; }
+}
+/* channels cards breackpoint 480px */
+@media screen and (max-width: 480px) {
+    .channels-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .channels {
+       flex-wrap: nowrap;
+       width: 500vw;
+       margin: 80px 0 20px 0;
+       padding: 0;
+    }
+    .card {
+        width: 100%;
+        margin: -1.5%;
+        padding: 0;
+        background-size: contain;
+    }
+    .card:hover {
+        width: 100%;
+        background-size: contain;
+    }
+    #top_plan {
+        scroll-margin-top: 170px;
+    }
 }
 
 
