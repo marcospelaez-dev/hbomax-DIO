@@ -122,7 +122,6 @@ nav img {
 main {
   margin-top: 200px;
   background-image: url(../img/background-movies-series.png);
-  background-size: contain;
   background-repeat: no-repeat;
 }
 

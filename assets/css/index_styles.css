@@ -124,6 +124,10 @@ hr {
 
 /* main config */
 
+main {
+    background-size: contain;
+}
+
 .title-main {
     width: 70%;
     margin: auto;

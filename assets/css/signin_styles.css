@@ -1,16 +1,105 @@
 @import url("./geral_config.css");
 
+main {
+    background-size: cover;
+}
+
 .login {
+    height: 70dvh;
+    margin: 0 auto;
+    padding: 100px 30px 50px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .form-login {
+    width: 40%;
     display: flex;
     flex-direction: column;
+    background-color: var(--form-bg-color);
+    padding: 80px;
 }
 .form-login h1 {
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 200;
     align-self: center;
+    margin-bottom: 30px;
+}
+.form-login label {
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.form-login input {
+    margin-bottom: 30px;
+    padding: 15px;
+    color: var(--text-color);
+    border-radius: 10px;    
+    border: var(--form-field-border);
+    background: var(--form-field-bg-color);
+    font-family: 'Raleway', sans-serif;
+}
+.form-login input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    color: var(--form-field-placeholder);
+}
+.login-submit {
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: none;
+    transition: background 2s, outline 2s;
+}
+.login-submit:hover {
+    background: transparent;
+    outline: 2px solid var(--tertiary-color);
+}
+.forgot-login {
+    color: var(--link-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+/* breackpoint 780px */
+@media screen and (max-width: 780px) {
+    .form-login { width: 100%; }
+}
+
+/* breackpoint 480px */
+@media screen and (max-width: 480px) {
+    .form-login label {
+        width: 120%;
+        font-size: 1em;
+    }
+    .form-login input {
+       width: 120%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .login-submit {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .forgot-login {
+        margin: 0;
+    }
 }
 
 
